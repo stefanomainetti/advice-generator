@@ -1,0 +1,30 @@
+// Utility classes
+
+$media-min: 55rem;
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1.2rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.d-block {
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.stop-transition {
+  transition: none !important;
+}

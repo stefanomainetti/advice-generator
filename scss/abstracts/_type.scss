@@ -1,0 +1,14 @@
+// Font
+
+$font-stack: "Epilogue", sans-serif;
+
+// Font weights
+$font-normal: 500;
+$font-bold: 700;
+
+// Font mixin
+
+@mixin font($weight) {
+  font-family: $font-stack;
+  font-weight: $weight;
+}
