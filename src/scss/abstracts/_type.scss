@@ -1,0 +1,15 @@
+// Font
+
+$font-stack: "Manrope", sans-serif;
+
+// Font weights
+
+$font-bold: 800;
+
+// Font mixin
+
+@mixin font-quote {
+  font-family: $font-stack;
+  font-weight: $font-bold;
+  font-size: 28px;
+}
