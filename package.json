@@ -2,7 +2,7 @@
   "name": "template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "sass": "sass --watch scss/main.scss:css/main.css"
   },
@@ -10,6 +10,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browserify": "^17.0.0",
+    "esmify": "^2.1.1",
+    "minify": "^8.0.4",
     "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.4"
   }
 }
