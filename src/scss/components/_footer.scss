@@ -1,0 +1,16 @@
+@use "../abstracts/colors";
+
+.attribution {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  text-align: center;
+  color: colors.$grayish-blue;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

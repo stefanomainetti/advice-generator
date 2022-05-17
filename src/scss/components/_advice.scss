@@ -1,0 +1,76 @@
+@use "../abstracts/colors";
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advice-container {
+  background-color: colors.$dark-grayish;
+  margin-inline: 1rem;
+  margin-top: 8.5rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.advice-id {
+  margin-block: 3rem 1.5rem;
+  color: colors.$neon-green;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.advice-text {
+  margin-inline: 2rem;
+
+  .advice-text-inner {
+    display: block;
+    font-size: 1.6rem;
+    color: colors.$light-cyan;
+    text-align: center;
+  }
+}
+
+.pattern-divider-mobile {
+  margin-block: 1rem 4rem;
+  background: url("../../../dist/images/pattern-divider-mobile.svg");
+  height: 2rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dice-container {
+  display: flex;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  aspect-ratio: 1;
+  background-color: colors.$neon-green;
+  border-radius: 50%;
+}
+
+.dice {
+  background: url("../../../dist/images/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  aspect-ratio: 1;
+  border: none;
+}
+
+.dice:hover {
+  cursor: pointer;
+}
+
+.dice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3rem colors.$neon-green;
+}

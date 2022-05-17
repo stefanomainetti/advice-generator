@@ -2,10 +2,10 @@ const https = require("https");
 
 const adviceIdTarget = document.querySelector(".advice-id");
 const adviceTextTarget = document.querySelector(".advice-text-inner");
-const dice = document.querySelector(".dice");
+const dice = document.querySelector(".dice-container");
 
-dice.addEventListener("click", async () => {
-  const req = await https
+const getAdvice = () => {
+  const req = https
     .request("https://api.adviceslip.com/advice", (res) => {
       var body = "";
       res.on("data", (d) => {
@@ -13,7 +13,7 @@ dice.addEventListener("click", async () => {
       });
       res.on("end", () => {
         var data = JSON.parse(body);
-        adviceIdTarget.innerHTML = data.slip.id;
+        adviceIdTarget.innerHTML = "ADVICE #" + data.slip.id;
         adviceTextTarget.innerHTML = data.slip.advice;
       });
     })
@@ -21,4 +21,16 @@ dice.addEventListener("click", async () => {
       console.error(e);
     });
   req.end();
+};
+
+window.addEventListener("load", () => {
+  adviceIdTarget.innerHTML = "ADVICE #...";
+  adviceTextTarget.innerHTML = "Loading...";
+  getAdvice();
+});
+
+dice.addEventListener("click", () => {
+  adviceIdTarget.innerHTML = "ADVICE #...";
+  adviceTextTarget.innerHTML = "Loading...";
+  getAdvice();
 });
