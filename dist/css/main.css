@@ -9,8 +9,8 @@
 html {
   font-family: "Manrope", sans-serif;
   font-weight: 800;
-  font-size: 28px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -381,6 +381,96 @@ body {
 
 .stop-transition {
   transition: none !important;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.advice-container {
+  background-color: hsl(217deg, 19%, 24%);
+  margin-inline: auto;
+  width: clamp(24rem, 92vw, 38rem);
+  margin-top: clamp(8.5rem, 30vw, 16rem);
+  border-radius: clamp(0.8rem, 3vw, 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.advice-id {
+  margin-block: 3rem 1.5rem;
+  color: hsl(150deg, 100%, 66%);
+  letter-spacing: 0.3rem;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+}
+
+.advice-text {
+  margin-inline: 2rem;
+}
+.advice-text .advice-text-inner {
+  display: block;
+  font-size: clamp(1.6rem, 6vw, 2rem);
+  color: hsl(193deg, 38%, 86%);
+  text-align: center;
+}
+
+.pattern-divider-mobile {
+  margin-block: 1rem 4rem;
+  background: url("../../../dist/images/pattern-divider-mobile.svg");
+  height: 2rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dice-container {
+  display: flex;
+  margin-inline: auto;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  aspect-ratio: 1;
+  background-color: hsl(150deg, 100%, 66%);
+  border-radius: 50%;
+}
+
+.dice {
+  background: url("../../../dist/images/icon-dice.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  aspect-ratio: 1;
+  border: none;
+}
+
+.dice:hover {
+  cursor: pointer;
+}
+
+.dice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3rem hsl(150deg, 100%, 66%);
+}
+
+.attribution {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  text-align: center;
+  color: hsl(217deg, 19%, 38%);
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }
 
 /*# sourceMappingURL=main.css.map */
