@@ -10,7 +10,7 @@ html {
   font-family: "Manrope", sans-serif;
   font-weight: 800;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -386,16 +386,15 @@ body {
 .main-container {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
 }
 
 .advice-container {
   background-color: hsl(217deg, 19%, 24%);
-  margin-inline: 1rem;
-  margin-top: 8.5rem;
-  border-radius: 0.8rem;
+  margin-inline: auto;
+  width: clamp(24rem, 92vw, 38rem);
+  margin-top: clamp(8.5rem, 30vw, 16rem);
+  border-radius: clamp(0.8rem, 3vw, 1rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -405,8 +404,8 @@ body {
 .advice-id {
   margin-block: 3rem 1.5rem;
   color: hsl(150deg, 100%, 66%);
-  letter-spacing: 0.2rem;
-  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 
 .advice-text {
@@ -414,7 +413,7 @@ body {
 }
 .advice-text .advice-text-inner {
   display: block;
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 6vw, 2rem);
   color: hsl(193deg, 38%, 86%);
   text-align: center;
 }
@@ -430,6 +429,7 @@ body {
 
 .dice-container {
   display: flex;
+  margin-inline: auto;
   transform: translateY(-50%);
   align-items: center;
   justify-content: center;
