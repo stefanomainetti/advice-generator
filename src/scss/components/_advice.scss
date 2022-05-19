@@ -36,13 +36,19 @@
   }
 }
 
-.pattern-divider-mobile {
+.pattern-divider {
   margin-block: 1rem 4rem;
   background: url("../images/pattern-divider-mobile.svg");
   height: 2rem;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  @media (min-width: 36rem) {
+    background: none;
+    background: url("../images/pattern-divider-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .dice-container {
