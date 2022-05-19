@@ -9,24 +9,33 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <script type="module" src="./dist/js/main-bundle-min.js" defer></script>
+    <script
+      type="text/javascript"
+      src="./dist/js/main-bundle-min.js"
+      defer
+    ></script>
     <title>Frontend Mentor | Advice generator app</title>
     <link rel="stylesheet" href="./dist/css/main.css" />
   </head>
   <body>
-    <div class="main-container">
-      <div class="advice-container">
-        <div class="advice-id"></div>
-        <div class="advice-text">
-          <q class="advice-text-inner"></q>
+    <main>
+      <div class="main-container">
+        <div class="advice-container">
+          <h1 class="advice-id"></h1>
+          <p class="advice-text">
+            <q class="advice-text-inner"></q>
+          </p>
+          <div class="pattern-divider"></div>
         </div>
-        <div class="pattern-divider-mobile"></div>
-        <div class="pattern-divider-desktop"></div>
+        <div class="dice-container">
+          <button
+            role="button"
+            class="dice"
+            aria-label="Advice generator"
+          ></button>
+        </div>
       </div>
-      <div class="dice-container">
-        <button type="button" class="dice"></button>
-      </div>
-    </div>
+    </main>
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
