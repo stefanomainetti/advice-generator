@@ -1,8 +1,8 @@
 const https = require("https");
 
-const adviceIdTarget = document.querySelector(".advice-id");
-const adviceTextTarget = document.querySelector(".advice-text-inner");
-const dice = document.querySelector(".dice-container");
+const adviceIdTarget = document.querySelector("[data-text='advice-id']");
+const adviceTextTarget = document.querySelector("[data-text='advice-content']");
+const dice = document.querySelector("[data-button='dice']");
 
 const getAdvice = () => {
   const req = https

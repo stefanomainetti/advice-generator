@@ -435,7 +435,7 @@ body {
   }
 }
 
-.dice-container {
+.dice-button {
   display: flex;
   margin-inline: auto;
   transform: translateY(-50%);
@@ -445,6 +445,7 @@ body {
   aspect-ratio: 1;
   background-color: hsl(150deg, 100%, 66%);
   border-radius: 50%;
+  border: none;
 }
 
 .dice {
@@ -456,11 +457,7 @@ body {
   border: none;
 }
 
-.dice:hover {
-  cursor: pointer;
-}
-
-.dice-container:hover {
+.dice-button:hover {
   cursor: pointer;
   box-shadow: 0 0 3rem hsl(150deg, 100%, 66%);
 }

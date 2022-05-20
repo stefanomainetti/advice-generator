@@ -17,19 +17,20 @@
     <main>
       <div class="main-container">
         <div class="advice-container">
-          <h1 class="advice-id"></h1>
+          <h1 data-text="advice-id" class="advice-id"></h1>
           <p class="advice-text">
-            <q class="advice-text-inner"></q>
+            <q data-text="advice-content" class="advice-text-inner"></q>
           </p>
           <div class="pattern-divider"></div>
         </div>
-        <div class="dice-container">
-          <button
-            type="button"
-            class="dice"
-            aria-label="Advice generator"
-          ></button>
-        </div>
+        <button
+          type="button"
+          data-button="dice"
+          class="dice-button"
+          aria-label="Advice generator"
+        >
+          <div class="dice"></div>
+        </button>
       </div>
     </main>
     <footer class="attribution">
