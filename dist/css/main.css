@@ -406,9 +406,9 @@ body {
 }
 
 .advice-id {
-  margin-block: 3rem 1.5rem;
+  margin-block: 3rem 1rem;
   color: hsl(150deg, 100%, 66%);
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 
