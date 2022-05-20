@@ -51,7 +51,7 @@
   }
 }
 
-.dice-container {
+.dice-button {
   display: flex;
   margin-inline: auto;
   transform: translateY(-50%);
@@ -61,6 +61,7 @@
   aspect-ratio: 1;
   background-color: colors.$neon-green;
   border-radius: 50%;
+  border: none;
 }
 
 .dice {
@@ -72,11 +73,7 @@
   border: none;
 }
 
-.dice:hover {
-  cursor: pointer;
-}
-
-.dice-container:hover {
+.dice-button:hover {
   cursor: pointer;
   box-shadow: 0 0 3rem colors.$neon-green;
 }
